@@ -195,19 +195,23 @@ def scrape_multiple_urls(urls, selectors=None, proxy=None, download_images=False
     return results
 
 def print_banner():
-    banner = r'''
-      _      __    __     ____                         
-     | | /| / /__ / /    / __/__________ ____  ___ ____
-     | |/ |/ / -_) _ \  _\ \/ __/ __/ _ `/ _ \/ -_) __/
-     |__/|__/\__/_.__/ /___/\__/_/  \_,_/ .__/\__/_/   
-                                       /_/             
-    '''
+    banner = r"""
+ __      __          __          ____                                                           
+/\ \  __/\ \        /\ \        /\  _`\                                                         
+\ \ \/\ \ \ \     __\ \ \____   \ \,\L\_\    ___   _ __    __     _____      __   _ __          
+ \ \ \ \ \ \ \  /'__`\ \ '__`\   \/_\__ \   /'___\/\`'__\/'__`\  /\ '__`\  /'__`\/\`'__\        
+  \ \ \_/ \_\ \/\  __/\ \ \L\ \    /\ \L\ \/\ \__/\ \ \//\ \L\.\_\ \ \L\ \/\  __/\ \ \/         
+   \ `\___x___/\ \____\\ \_,__/    \ `\____\ \____\\ \_\\ \__/.\_\\ \ ,__/\ \____\\ \_\         
+    '\/__//__/  \/____/ \/___/      \/_____/\/____/ \/_/ \/__/\/_/ \ \ \/  \/____/ \/_/         
+                                                                    \ \_\                       
+                                                                     \/_/                             
+    """
     print(banner)
 
 def main():
-    print_banner()
+    print_banner()  # Banner'ı göster
     while True:
-        print('\nGelişmiş Web Scraping Aracı')
+        print('\nWeb Scraper v1.0')
         print('-' * 30)
         print("1. Tek URL'den veri çek")
         print("2. Çoklu URL'lerden veri çek")
